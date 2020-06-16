@@ -3,10 +3,10 @@
     <?php include("head.php") ?>
     <body>
         <?php include("menu.php") ?>
-        <?php require_once("../controller/controllerUpdateCarro.php"); ?>
+        <?php require_once("../controllers/controllerUpdateCarro.php"); ?>
 
         <div class="row">
-            <form method="post" action="../controller/controllerUpdateCarro.php" id="form" name="form" class="col-10">
+            <form method="post" action="../controllers/controllerUpdateCarro.php" id="form" name="form" class="col-10">
                 <div class="form-group">
                     <input class="form-control" type="text" id="marca" name="marca" placeholder="marca do carro" required autofocus>
                     <input class="form-control" type="text" id="modelo" name="modelo" placeholder="modelo do carro" required>
