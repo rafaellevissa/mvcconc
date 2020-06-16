@@ -14,6 +14,10 @@ Projeto faz parte de avaliaçao parcial da disciplina de desenvolvimento de sist
 - php
 - mysql
 
+**Diagramas**
+
+<img src="./doc/Diagrama-Classes.png" width="500px">
+
 **Autores**
 
 Foto | Nome | GitHub | Likedin | E-mail

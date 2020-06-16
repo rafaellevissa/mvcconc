@@ -1,10 +1,7 @@
 <?php
 
-class CarroDb{
-    protected $mysqli;
-
+class ControllerDeleteCarro{
     public function __construct(){
 
     }
-
 }
