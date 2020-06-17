@@ -1,6 +1,6 @@
 <?php
 
-class motor{
+class motor extends MotorDb{
     private $potencia;
     private $cilindro;
     private $chassi;
@@ -29,6 +29,6 @@ class motor{
     }
 
     public function incluir(){
-        echo("Motor Incluso");
+        return $this->setMotor($this->getPotencia(), $this->getCilindro(), $this->getChassi());
     }
 }

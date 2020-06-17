@@ -1,6 +1,6 @@
 <?php
-
-class Carro {
+require_once('carroDb.php');
+class Carro extends CarroDb{
     private $chassi;
     private $marca;
     private $modelo;
@@ -37,7 +37,7 @@ class Carro {
     }
     
     public function incluir(){
-        echo("carro incluso");
+        return $this->setCarro($this->getMarca(), $this->getModelo(), $this->getCor());
     }
 
 }
