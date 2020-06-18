@@ -1,5 +1,5 @@
 <?php
-
+require_once("../config/db.php");
 class MotorDb{
     protected $mysqli;
 
@@ -8,7 +8,7 @@ class MotorDb{
     }
 
     public function conexao(){
-        $this->mysqli = mysqli(DB_SERVIDOR, DB_USUARIO, DB_SENHA, DB_BANCO);
+        $this->mysqli = new mysqli(DB_SERVIDOR, DB_USUARIO, DB_SENHA, DB_BANCO);
     }
 
     public function setMotor($potencia, $cilindros, $chasi){

@@ -1,5 +1,5 @@
 <?php
-require_once '../models/motor.php';
+require_once("../models/motor.php");
 class ControllerCreateMotor{
     private $oMotor;
     public function __construct(){

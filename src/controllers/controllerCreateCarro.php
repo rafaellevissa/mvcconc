@@ -1,5 +1,5 @@
 <?php
-require_once '../models/carro.php';
+require_once("../models/carro.php");
 class ControllerCreateCarro{
     private $oCarro;
     public function __construct(){
@@ -7,11 +7,10 @@ class ControllerCreateCarro{
         $this->cadastrar();
     }
 
-    public function cadastrar(){
+    public function cadastrar(){                
         $this->oCarro->setMarca($_POST['marca']);
         $this->oCarro->setModelo($_POST['modelo']);
         $this->oCarro->setCor($_POST['cor']);
-
         $resultado = $this->oCarro->incluir();
         if($resultado>=1){
             echo("<script>alert('Carro cadastrado com sucesso!');document.location='../views/cadastroCarro.php'</script>");

@@ -7,7 +7,7 @@
 
         <table class="table">
             <thead>
-                <tr>
+                <tr> 
                     <th>Chassi</th>
                     <th>Marca</th>
                     <th>Modelo</th>

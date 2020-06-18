@@ -1,14 +1,10 @@
 <?php
 require_once('carroDb.php');
 class Carro extends CarroDb{
-    private $chassi;
+    private $chassi; 
     private $marca;
     private $modelo;
-    private $cor;
-    
-    public function __construct(){
-        echo("Carro criado!");
-    }
+    private $cor;     
 
     public function getChassi(){
         return $this->$chassi;
@@ -37,6 +33,7 @@ class Carro extends CarroDb{
     }
     
     public function incluir(){
+        
         return $this->setCarro($this->getMarca(), $this->getModelo(), $this->getCor());
     }
 

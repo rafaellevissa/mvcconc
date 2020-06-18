@@ -5,9 +5,7 @@ class motor extends MotorDb{
     private $cilindro;
     private $chassi;
 
-    public function __construct(){
-        echo("motor criado");
-    }
+   
 
     public function getPotencia(){
         return $this->potencia;

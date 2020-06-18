@@ -1,17 +1,18 @@
-<?php
-
+<?php 
+require_once("../config/db.php");
 class CarroDb{
     protected $mysqli;
 
     public function __construct(){
         $this->conexao();
     }
-
+ 
     public function conexao(){
-        $this->mysqli = mysqli(DB_SERVIDOR, DB_USUARIO, DB_SENHA, DB_BANCO);
+        $this->mysqli = new mysqli(DB_SERVIDOR, DB_USUARIO, DB_SENHA, DB_BANCO);
     }
 
     public function setCarro($marca, $modelo, $cor){
+        
         $sql = $this->mysqli->prepare("INSERT INTO Carros (`marca`, `modelo`, `cor`) VALUES (?,?,?)");
         $sql->bind_param("sss", $marca, $modelo, $cor);
         if($sql->execute()){

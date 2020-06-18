@@ -6,7 +6,7 @@ class ControllerListCarro{
     public function __construct(){
         $this->carroDb = new CarroDb();
         $this->criarTabela();
-    }
+    } 
 
     public function criarTabela(){
         $result = $this->carroDb->getCarros();
