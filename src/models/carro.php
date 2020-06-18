@@ -7,33 +7,33 @@ class Carro extends CarroDb{
     private $cor;     
 
     public function getChassi(){
-        return $this->$chassi;
+        return $this->chassi;
     }
     public function getMarca(){
-        return $this->$marca;
+        return $this->marca;
     }
     public function getModelo(){
-        return $this->$modelo;
+        return $this->modelo;
     }
     public function getCor(){
-        return $this->$cor;
+        return $this->cor;
     }
     
     public function setChassi($chassi){
-        $this->$chassi = $chassi;
+        $this->chassi = $chassi;
     }
     public function setMarca($marca){
-        $this->$marca = $marca;
+        $this->marca = $marca;
     }
     public function setModelo($modelo){
-        $this->$modelo = $modelo;
+        $this->modelo = $modelo;
     }
     public function setCor($cor){
-        $this->$cor = $cor;
+        $this->cor = $cor;
     }
     
     public function incluir(){
-        
+        echo($this->getMarca());
         return $this->setCarro($this->getMarca(), $this->getModelo(), $this->getCor());
     }
 

@@ -7,7 +7,7 @@ class ControllerCreateCarro{
         $this->cadastrar();
     }
 
-    public function cadastrar(){                
+    private function cadastrar(){                
         $this->oCarro->setMarca($_POST['marca']);
         $this->oCarro->setModelo($_POST['modelo']);
         $this->oCarro->setCor($_POST['cor']);
