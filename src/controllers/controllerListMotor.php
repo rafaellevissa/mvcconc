@@ -16,7 +16,7 @@ class ControllerListMotor{
             echo("<td>".$motor['potencia']."</td>");
             echo("<td>".$motor['qntCilindros']."</td>");
             echo("<td>".$motor['chassi']."</td>");   
-            echo("<td><a class='btn btn-warning' href='editarMotor.php?chassi=".$motor['MotorID']."'>Editar Motor</a></td>");
+            echo("<td><a class='btn btn-warning' href='editarMotor.php?MotorID=".$motor['MotorID']."'>Editar Motor</a></td>");
             echo("</tr>");
         } 
     }

@@ -12,11 +12,25 @@ class ControllerUpdateCarro{
         $this->chassi = $chassi;
         $this->criarFormulario($chassi);
     }
+    
     public function getChassi(){
         return $this->chassi;
     }
-    public function criarFormulario($chassi){
-        $row = $this->carroDb->getCarroByChassi($chassi);
+
+    public function getMarca(){
+        return $this->marca;
+    }
+
+    public function getModelo(){
+        return $this->modelo;
+    }
+
+    public function getCor(){
+        return $this->cor;
+    }
+
+    public function criarFormulario($chassi){        
+        $row = $this->carroDb->getCarroByChassi($chassi);        
         $this->marca = $row['marca'];
         $this->modelo = $row['modelo'];
         $this->cor = $row['cor'];
@@ -33,7 +47,7 @@ class ControllerUpdateCarro{
 
 $chassi = filter_input(INPUT_GET, 'chassi');
 $editar = new ControllerUpdateCarro($chassi);
-echo($chassi)
+
 if(isset($_POST['submit'])){
     $editar->editarFormulario($_POST['marca'],$_POST['modelo'],$_POST['cor'],$_POST['chassi'],);
 }

@@ -29,9 +29,9 @@ class MotorDb{
         return $array;
     }
 
-    public function updateMotor($potencia, $cilindros, $chasi, $MotorID){
-        $sql = $this->mysqli->prepare("UPDATE `Motores` SET `potencia` = ?, `cilindros` = ?, `chasi` = ? WHERE `MotorID` = ?");
-        $sql->bind_param("ssss",$potencia, $cilindros, $chasi,$MotorID);
+    public function updateMotor($potencia, $cilindros, $chassi, $MotorID){
+        $sql = $this->mysqli->prepare("UPDATE `Motores` SET `potencia` = ?, `qntCilindros` = ?, `chassi` = ? WHERE `MotorID` = ?");
+        $sql->bind_param("ssss",$potencia, $cilindros, $chassi,$MotorID);
         if($sql->execute()){
             return true;
         }else{
