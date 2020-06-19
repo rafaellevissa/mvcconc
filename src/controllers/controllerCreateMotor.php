@@ -5,12 +5,13 @@ class ControllerCreateMotor{
     public function __construct(){
         $this->oMotor = new Motor();
         $this->cadastrar();
-    }
+    } 
 
     public function cadastrar(){
-        $this->oMotor->setMarca($_POST['potencia']);
-        $this->oMotor->setModelo($_POST['qntCilindros']);
-        $this->oMotor->setCor($_POST['chassi']);
+        echo($_POST['potencia']);
+        $this->oMotor->setPotencia($_POST['potencia']);
+        $this->oMotor->setCilindro($_POST['cilindro']);
+        $this->oMotor->setChassi($_POST['chassi']);
 
         $resultado = $this->oMotor->incluir();
         if($resultado>=1){

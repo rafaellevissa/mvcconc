@@ -9,11 +9,11 @@ class MotorDb{
 
     public function conexao(){
         $this->mysqli = new mysqli(DB_SERVIDOR, DB_USUARIO, DB_SENHA, DB_BANCO);
-    }
+    }  
 
-    public function setMotor($potencia, $cilindros, $chasi){
-        $sql = $this->mysqli->prepare("INSERT INTO Carros (`potencia`, `qntCilindros`, `chassi`) VALUES (?,?,?)");
-        $sql->bind_param("sss", $potencia, $cilindros, $chasi);
+    public function setMotor($potencia, $cilindros, $chassi){
+        $sql = $this->mysqli->prepare("INSERT INTO Motores (`potencia`, `qntCilindros`, `chassi`) VALUES (?,?,?)");
+        $sql->bind_param("sss", $potencia, $cilindros, $chassi);
         if($sql->execute()){
             return true;
         }else{

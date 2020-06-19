@@ -28,7 +28,7 @@ class CarroDb{
             $array[]=$row;
         }
         return $array;
-    }
+    } 
 
     public function deleteCarro($chassi){
         $sql = $this->mysqli->prepare("DELETE FROM `Motores` WHERE `chassi` = ?");        

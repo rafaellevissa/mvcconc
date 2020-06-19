@@ -16,7 +16,7 @@ class ControllerListCarro{
             echo("<td>".$carro['marca']."</td>");
             echo("<td>".$carro['modelo']."</td>");
             echo("<td>".$carro['cor']."</td>");   
-            echo("<td><a class='btn btn-warning' href='editarCarro.php?chassi=".$carro['chassi']."'>Editar Carro</a> <a class='btn btn-danger' href='../controlers/controllerDeleteCarro.php?chassi=".$carro['chassi']."'>Excluir Carro</a></td>");
+            echo("<td><a class='btn btn-warning' href='editarCarro.php?chassi=".$carro['chassi']."'>Editar Carro</a> <a class='btn btn-danger' href='../controllers/controllerDeleteCarro.php?chassi=".$carro['chassi']."'>Excluir Carro</a></td>");
             echo("</tr>");
         } 
     }

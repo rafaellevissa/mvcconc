@@ -6,7 +6,7 @@
 
         <div class="row">
             <form method="post" action="../controllers/controllerCreateMotor.php" id="form" name="form" class="col-10">
-                <div class="form-group">
+                <div class="form-group"> 
                     <input class="form-control" type="text" id="potencia" name="potencia" placeholder="potencia do motor" required autofocus>
                     <input class="form-control" type="text" id="cilindro" name="cilindro" placeholder="quantidade de cilindros do motor" required>
                     <input class="form-control" type="text" id="chassi" name="chassi" placeholder="carro" required>                    
