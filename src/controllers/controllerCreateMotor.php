@@ -8,7 +8,6 @@ class ControllerCreateMotor{
     } 
 
     public function cadastrar(){
-        echo($_POST['potencia']);
         $this->oMotor->setPotencia($_POST['potencia']);
         $this->oMotor->setCilindro($_POST['cilindro']);
         $this->oMotor->setChassi($_POST['chassi']);
