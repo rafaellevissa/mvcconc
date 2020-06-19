@@ -33,7 +33,6 @@ class Carro extends CarroDb{
     }
     
     public function incluir(){
-        echo($this->getMarca());
         return $this->setCarro($this->getMarca(), $this->getModelo(), $this->getCor());
     }
 
